@@ -86,7 +86,8 @@
     width: 95%;
     max-width: 2806px;
     /* Limita el ancho máximo */
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
+    height: 400px;
     /* Mantiene la relación de aspecto 16:9 */
     position: relative;
     overflow: hidden;
@@ -120,7 +121,10 @@
 }
 
 .containerP {
-    margin: 0;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -131,23 +135,28 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye las columnas equitativamente */
-    margin: 0 20px;  /* Margin de 20px a los lados */
+    justify-content: space-between;
+    /* Distribuye las columnas equitativamente */
+    margin: 0 20px;
+    /* Margin de 20px a los lados */
 }
 
 .section {
-    flex: 0 0 23%; /* Cada sección ocupará aproximadamente el 23% del contenedor (con un margen entre ellas) */
-    margin: 10px 0; /* Espaciado vertical entre las secciones */
+    flex: 0 0 23%;
+    /* Cada sección ocupará aproximadamente el 23% del contenedor (con un margen entre ellas) */
+    margin: 10px 0;
+    /* Espaciado vertical entre las secciones */
     padding: 20px;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* background-color: white; */
-    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    box-sizing: border-box;
+    /* Incluye padding y border en el cálculo del ancho */
 }
 
 .section img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .section h2 {
@@ -156,31 +165,78 @@
 }
 
 .proposito {
-    background-color: #f9a825;
+    background-color: var(--secundario);
+}
+.proposito h2{
+    color: var(--primario)
 }
 
 .estructura {
     background-color: #7b1fa2;
+    color: white;
 }
 
 .modalidad {
-    background-color: #388e3c;
+    background-color: #009c98;
+    color: white;
 }
 
 .evaluacion {
-    background-color: #d32f2f;
+    background-color: #ff008c;
+    color: white;
 }
+
+/* hr {
+    background-color: #000000; /* Negro puro 
+    border: 0;
+    height: 1rem;
+    width: 90%;
+    margin: 0 auto; /* Centrar horizontalmente 
+    
+} */
+
+hr {
+    border: 0;
+    margin: 10px auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+/* .pill {
+    height: 5px;
+    border-radius: 2px;
+    color: black;
+    background-color: black;
+    border: 2px solid currentColor;
+    width: 80%;
+} */
+
+.hr-d {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido, si aplica */
+    margin: 5px 2%; /* Margen de 20px a los lados */
+}
+
+.hr-b {
+    width: 90%; /* Establece el ancho al 80% del contenedor */
+    height: 10px; /* Mantiene las proporciones de la imagen */
+}
+
 
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 1024px) {
     .section {
-        flex: 0 0 48%; /* 2 columnas */
+        flex: 0 0 48%;
+        /* 2 columnas */
     }
 }
 
 @media (max-width: 768px) {
     .section {
-        flex: 0 0 98%; /* 1 columna */
+        flex: 0 0 98%;
+        /* 1 columna */
     }
 }
 
