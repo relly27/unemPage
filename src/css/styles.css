@@ -221,7 +221,7 @@ hr {
 
 .hr-b {
     width: 90%; /* Establece el ancho al 80% del contenedor */
-    height: 10px; /* Mantiene las proporciones de la imagen */
+    height: 7px; /* Mantiene las proporciones de la imagen */
 }
 
 
@@ -240,6 +240,77 @@ hr {
     }
 }
 
+
+.ofertas {
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Asegura que los títulos estén en columnas */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea texto al centro */
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.ofertas h1 {
+    color: var(--primario);
+    padding: 0.5rem; /* Espaciado interno */
+    background: var(--secundario); /* Fondo ligero para destacar */
+    width: fit-content; /* Ajusta el ancho al contenido del texto */
+    margin: 0; /* Elimina márgenes entre los encabezados */
+}
+
+.ofertas h1 + h1 {
+    margin-top: -0.5rem; /* Une el segundo título al primero */
+     /* Opcional: una línea divisoria */
+}
+
+
+
+
+.containerButton {
+    display: grid; /* Usamos grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 1rem; /* Espacio entre botones */
+    padding: 1rem;
+    max-width: 700px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.button {
+    background: var(--primario); /* Color de fondo */
+    color: var(--secundario); /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 1rem; /* Espaciado interno */
+    border: none; /* Elimina bordes por defecto */
+    border-radius: 2px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de mano en hover */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Altura fija para igual tamaño */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.button:hover {
+    background: var(--secundario); /* Cambia color de fondo en hover */
+    color: var(--primario); /* Cambia color del texto en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}
 
 
 
@@ -307,3 +378,4 @@ hr {
     }
 
 }
+
