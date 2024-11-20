@@ -124,20 +124,29 @@
         <button class="button">Educación Especial</button>
         <button class="button">Educación de Jóvenes, Adultos y Adultas</button>
         <button class="button">Formación General</button>
-        <button class="button">Educación Inicial</button>
+        <button id="edu-ini" class="button">Educación Inicial</button>
+        <script>
+            const button = document.getElementById('edu-ini');
+
+            // Agregar un evento 'click' al botón
+            button.addEventListener('click', () => {
+                // Redirigir a la ruta deseada
+                window.location.href = 'src/view/educacion-inicial.html';
+            });
+        </script>
         <button class="button">Educación Primaria</button>
     </div>
 
-     <!-- noticias -->
-     <div class="contenedor-noticias">
+    <!-- noticias -->
+    <div class="contenedor-noticias">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="">
                     <img src="img/noticias.jpg" class="rounded float-start" alt="...">
                     <div class="card-body">
                         <p class="card-text"><a
-                            href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
-                            La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
+                                href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
+                                La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
                     </div>
                 </div>
             </div>
@@ -146,8 +155,8 @@
                     <img src="img/noticias.jpg" class="rounded float-start" alt="...">
                     <div class="card-body">
                         <p class="card-text"><a
-                            href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
-                            La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
+                                href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
+                                La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
                     </div>
                 </div>
                 <div class="linea-separadora"></div>
@@ -157,8 +166,8 @@
                     <img src="img/noticias.jpg" class="rounded float-start" alt="...">
                     <div class="card-body">
                         <p class="card-text"><a
-                            href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
-                            La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
+                                href="https://unem.edu.ve/blognoticias/Nota/2024/La-UNEM-impulsa-y-fortalece-el-legado-de-los-educadores.php">
+                                La UNEM Impulsa y Fortalece el Legado de los Educadores </a></p>
                     </div>
                 </div>
                 <div class="linea-separadora"></div>
@@ -253,7 +262,7 @@
         </div>
 
     </footer>
-    
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
