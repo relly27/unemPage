@@ -1,18 +1,253 @@
-body {
-    font-family: Arial, sans-serif;
+/* Estilos para el cintillo */
+:root {
+    --primario: #0d6efd;
+    --secundario: #ff9900;
+    --fondo: #f4f4f4;
 }
 
-header h1 {
+.cintillo {
+    background-color: var(--primario);
+    /* Azul similar al de la imagen */
+}
+
+/* Logo */
+.logo-img {
+    max-height: 40px;
+}
+
+/* Estilos de los enlaces */
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    border-radius: 15px;
+}
+
+/* Hover con bordes redondeados */
+.nav-link:hover {
+    background-color: var(--secundario);
+    color: black;
+}
+
+/* Ajustes del menú en línea */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que se acomoden si es necesario */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Menú lateral (Offcanvas) */
+.offcanvas-body {
+    padding: 10px 20px;
+}
+
+/* .shabono {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--primario);
+    width: 100%; /* Asegura que ocupe todo el ancho disponible 
+    padding: 0 15px; /* Espacio en los laterales si es necesario 
+} */
+.shabono {
+    padding: 15px;
+}
+
+.shabono-img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho disponible sin exceder el contenedor */
+    height: 0%;
+    /* Mantiene la proporción de la imagen */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    /* Espaciado superior e inferior */
+}
+
+.iframe-wrapper {
+    width: 95%;
+    max-width: 2806px;
+    /* Limita el ancho máximo */
+    aspect-ratio: 16 / 9;
+    /* Mantiene la relación de aspecto 16:9 */
+    position: relative;
+    overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pnf {
+    background-color: var(--primario);
+    /* Fondo azul */
+    color: white;
+    /* Color de la letra blanco */
     font-size: 2rem;
-    font-weight: bold;
+    /* Tamaño de la letra más grande (puedes ajustarlo según lo necesites) */
+    width: 80%;
+    /* Ancho del 80% del contenedor */
+    margin: 0 auto;
+    /* Centra el div horizontalmente */
+    padding: 5px;
+    /* Añade espaciado interno para mejorar la apariencia */
+    text-align: center;
+    /* Centra el texto dentro del div */
+    border-radius: 0px;
+    /* Bordes redondeados opcionales */
 }
 
-.card {
-    border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.containerP {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las columnas equitativamente */
+    margin: 0 20px;  /* Margin de 20px a los lados */
+}
+
+.section {
+    flex: 0 0 23%; /* Cada sección ocupará aproximadamente el 23% del contenedor (con un margen entre ellas) */
+    margin: 10px 0; /* Espaciado vertical entre las secciones */
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: white; */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+.section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.proposito {
+    background-color: #f9a825;
+}
+
+.estructura {
+    background-color: #7b1fa2;
+}
+
+.modalidad {
+    background-color: #388e3c;
+}
+
+.evaluacion {
+    background-color: #d32f2f;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .section {
+        flex: 0 0 48%; /* 2 columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex: 0 0 98%; /* 1 columna */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive: Cambios para <= 1125px */
+@media (max-width: 1120px) {
+
+    /* Muestra el menú hamburguesa */
+    .navbar-toggler {
+        display: block;
+    }
+
+    /* El menú tradicional se oculta */
+    .navbar-expand-lg .navbar-nav {
+        display: none;
+    }
+
+    /* Muestra el offcanvas solo en resolución pequeña */
+    .offcanvas {
+        display: block;
+    }
+}
+
+/* Responsive: Cambios para <= 1125px */
+@media (max-width: 500px) {
+
+    .pnf {
+        background-color: var(--primario);
+        /* Fondo azul */
+        color: white;
+        /* Color de la letra blanco */
+        font-size: 10px;
+        /* Tamaño de la letra más grande (puedes ajustarlo según lo necesites) */
+        width: 85%;
+        /* Ancho del 80% del contenedor */
+        margin: 0 auto;
+        /* Centra el div horizontalmente */
+        padding: 5px;
+        /* Añade espaciado interno para mejorar la apariencia */
+        text-align: center;
+        /* Centra el texto dentro del div */
+        border-radius: 0px;
+        /* Bordes redondeados opcionales */
+    }
+
+    .shabono {
+        /* padding: 0px 5px; */
+        /* padding-top: 10; */
+        width: 97%;
+    }
+
 }
