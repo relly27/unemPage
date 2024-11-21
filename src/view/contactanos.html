@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNEM</title>
+    <link rel="stylesheet" href="../css/tabler.min.css">
+    <link rel="stylesheet" href="../css/mary.css">
+    <script src="../controller/tabler.min.js"></script>
+</head>
+<body>
+
+
+<div class="page-body">
+    <div class="container-xl">
+      <div class="col-md-6 col-lg-12">
+        <div class="card card-inactive">
+          <div class="card-body card-titulo">
+            <h1>Plan Nacional de Formación Docente (PNFD) año escolar 2024-2025</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container-xl">
+
+    <form class="row g-3 needs-validation" action="registrar.js" method="post" novalidate onsubmit="return validarFormulario()">
+        <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" id="validationCustom01" value="" required pattern="[a-zA-Z\s]+" title="Solo se permiten letras">
+        <div class="valid-feedback">
+            El nombre es válido.
+        </div>
+        <div class="invalid-feedback">
+            El nombre es inválido! Solo se permiten letras.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellido</label>
+        <input type="text" id="apellido" name="apellido" class="form-control" id="validationCustom02" value="" required pattern="[a-zA-Z\s]+" title="Solo se permiten letras">
+        <div class="valid-feedback">
+            El apellido es válido.
+        </div>
+        <div class="invalid-feedback">
+            El apellido es inválido! Solo se permiten letras.
+        </div>
+        </div>
+        <div class="col-md-1">
+        <label for="validationCustom04" class="form-label">Nacionalidad</label>
+        <select class="form-select" id="nacionalidad" name="nacionalidad" id="validationCustom04" required>
+            <option selected disabled value="">Selecione</option>
+            <option>V</option>
+            <option>E</option>
+        </select>
+        <div class="invalid-feedback">
+            No ha selecionado el nacionalidad.
+        </div>
+        </div> 
+        <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Cedula</label>
+        <input type="text" id="cedula" name="cedula" class="form-control" id="validationCustom05" required pattern="[0-9]{7,8}" oninput="this.setCustomValidity(this.value.length < 7 || this.value.length > 8 ? 'Debe ingresar entre 7 y 8 dígitos' : '');">
+        <div class="invalid-feedback">
+            Por favor, ingrese un número de cedula válido de 7 a 8 dígitos.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustomEmail" class="form-label">Correo</label>
+        <input type="email" id="correo" name="correo" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninput="this.setCustomValidity(this.value.length < 1 || this.value.length > 50 || !this.value.match(/^[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/) ? 'Debe ingresar un correo electrónico válido' : '');">
+        <div class="invalid-feedback">
+            Debe ingresar un correo electrónico válido.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustomEmail" class="form-label">Teléfono</label>
+        <input type="number" id="telefono" name="telefono" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required pattern="[0-9]{11,12}" oninput="this.setCustomValidity(this.value.length < 11 || this.value.length > 12 ? 'Debe ingresar un teléfono válido de 11 a 12 caracteres' : '');">
+        <div class="invalid-feedback">
+            Debe ingresar un teléfono válido.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">Tipo de Personal</label>
+        <select class="form-select" id="tipo_personal" name="tipo_personal" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Docente</option>
+            <option>Administrativo</option>
+            <option>Obrero</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, seleccione un tipo de personal válido.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">¿Estás Activo en Funciones Docentes?</label>
+        <select class="form-select" id="docente_activo" name="docente_activo" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">¿Perteneces a la Nómina activa del MPPE?</label>
+        <select class="form-select" id="nomina_mppe" name="nomina_mppe" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>
+        <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">¿Tienes Problemas Para Registrarte?</label>
+        <select class="form-select" id="problema_inscripcion" name="problema_inscripcion" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>
+        <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">¿Tienes Problemas Para Inscribirte en Algún Curso de tu Nivel - Modalidad Y/O Funciones de Gestión?</label>
+        <select class="form-select" id="problema_curso" name="problema_curso" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>  
+        <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">¿Requiere cambiar Y/O Actualizar tu Correo?</label>
+        <select class="form-select" id="actualizar_correo" name="actualizar_correo" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>  
+        <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">¿Requiere Cambiar Y/O Actualizar tu Número de Telefono?</label>
+        <select class="form-select" id="actualizar_telefono" name="actualizar_telefono" id="validationCustom04" required>
+            <option selected disabled value="">Selecione una opcion</option>
+            <option>Si</option>
+            <option>No</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, Seleccione un opción valida.
+        </div>
+        </div>   
+        <div class="mb-3 col-md-6">
+        <label for="validationTextarea" class="form-label">Sugerencia:</label>
+        <textarea class="form-control" id="sugerencia" name="sugerencia" id="validationTextarea" placeholder="Escriba la sugerencia" required maxlength="50"></textarea>
+        <div class="invalid-feedback">
+            Por favor, ingrese un mensaje en el campo de texto con un máximo de 50 caracteres.
+        </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" type="submit" value="Registrar">Enviar</button>
+        </div>
+
+        <script>
+        function validarFormulario() {
+            const form = document.querySelector('form');
+            const inputs = form.querySelectorAll('input, select, textarea');
+            let isValid = true;
+            inputs.forEach(input => {
+            if (!input.checkValidity()) {
+                isValid = false;
+                input.classList.add('is-invalid');
+            } else {
+                input.classList.remove('is-invalid');
+            }
+            });
+            return isValid;
+        }
+        </script>
+
+        <script>
+            const textarea = document.getElementById('validationTextarea');
+            textarea.addEventListener('input', () => {
+            if (textarea.value.length > 50) {
+                textarea.setCustomValidity('Por favor, ingrese un mensaje en el campo de texto con un máximo de 50 caracteres.');
+            } else {
+                textarea.setCustomValidity('');
+            }
+            });
+        </script>
+    </form>
+</div>
+
+    
+</div>
+
+
+    <!-- <div class="page-body">
+        <div class="container-xl">
+          <div class="row row-cards">
+            <div class="col-12">
+              <form action="https://httpbin.org/post" method="post" class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Form elements</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row g-5">
+                    <div class="col-xl-4">
+                      <div class="row">
+
+    
+                        <div class="mb-3">
+                          <label class="form-label">Validation States </label>
+                          <input type="text" class="form-control is-valid mb-2" placeholder="Valid State..">
+                          <input type="text" class="form-control is-invalid" placeholder="Invalid State..">
+                          <div class="invalid-feedback">Invalid feedback</div>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Validation States (lite)</label>
+                          <input type="text" class="form-control is-valid is-valid-lite mb-2" placeholder="Valid State..">
+                          <input type="text" class="form-control is-invalid is-invalid-lite" placeholder="Invalid State..">
+                        </div>
+
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <footer id="footerId"></footer>
+    <script src="/../src/controller/educaionI.js"></script>
+
+
+</body>
+</html>
