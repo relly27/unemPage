@@ -173,7 +173,7 @@
 }
 
 .evaluacion {
-    background-color: #ff008c;
+    background-color: hsl(325.48deg 95.88% 38.04%);
     color: white;
 }
 
@@ -245,11 +245,11 @@
 
 .button {
     background: var(--primario); /* Color de fondo */
-    color: var(--secundario); /* Color del texto */
+    color: white; /* Color del texto */
     text-align: center; /* Centrar el texto */
     padding: 1rem; /* Espaciado interno */
     border: none; /* Elimina bordes por defecto */
-    border-radius: 2px; /* Bordes redondeados */
+    border-radius: 100px; /* Bordes redondeados */
     font-size: 1rem; /* Tamaño del texto */
     cursor: pointer; /* Cursor de mano en hover */
     display: flex; /* Flexbox para centrar contenido */
@@ -261,7 +261,7 @@
 
 .button:hover {
     background: var(--secundario); /* Cambia color de fondo en hover */
-    color: var(--primario); /* Cambia color del texto en hover */
+    color: white; /* Cambia color del texto en hover */
     transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
