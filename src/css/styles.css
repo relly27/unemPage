@@ -1,53 +1,8 @@
 /* Estilos para el cintillo */
 :root {
-    --primario: #0d6efd;
+    --primario: #005da8;
     --secundario: #ff9900;
     --fondo: #f4f4f4;
-}
-
-.cintillo {
-    background-color: var(--primario);
-    /* Azul similar al de la imagen */
-}
-
-/* Logo */
-.logo-img {
-    max-height: 40px;
-}
-
-/* Estilos de los enlaces */
-.nav-link {
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
-    border-radius: 15px;
-}
-
-/* Hover con bordes redondeados */
-.nav-link:hover {
-    background-color: var(--secundario);
-    color: black;
-}
-
-/* Ajustes del menú en línea */
-.nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* Permite que se acomoden si es necesario */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-/* Menú lateral (Offcanvas) */
-.offcanvas-body {
-    padding: 10px 20px;
 }
 
 .shabono {

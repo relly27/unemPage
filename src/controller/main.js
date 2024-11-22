@@ -24,5 +24,5 @@ async function includeHTML(selector, url) {
   
   // Incluir las vistas
   includeHTML('#footerID', '/../src/view/footer.html'); 
-  includeHTML('#nav-barP', '/../src/view/nav-bar.html'); 
+  includeHTML('#navbarID', '/../src/view/nav-bar.html'); 
   
