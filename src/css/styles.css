@@ -221,7 +221,7 @@
 .ofertas h1 {
     color: var(--primario);
     padding: 0.5rem; /* Espaciado interno */
-    background: var(--secundario); /* Fondo ligero para destacar */
+    /* background: var(--secundario); Fondo ligero para destacar */
     width: fit-content; /* Ajusta el ancho al contenido del texto */
     margin: 0; /* Elimina márgenes entre los encabezados */
 }
