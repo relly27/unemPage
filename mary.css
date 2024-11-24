@@ -1,0 +1,269 @@
+.layout-boxed{
+  background-color: #fff !important;
+  }
+  /**MENU*/
+  .menu-2{
+    background-color: #2577d5;
+  }
+  .menu-2 .menu-4{
+    margin-top: 15px;
+  }
+  
+  .navbar .navbar-nav .nav-link{
+    color: #fff !important;
+  }
+  .navbar .navbar-nav .nav-link:hover{
+    background-color:#066fd1 !important;
+  }
+  .navbar .navbar-nav .nav-link:hover{
+    color: #e99f12 !important;
+  }
+  
+  .botones{
+    border-radius: 14px !important;
+    --tblr-btn-padding-y: 1.563rem !important;
+  }
+@media (max-width: 767.98px) {
+  .botones{
+    --tblr-btn-padding-y: 0.563rem !important;
+  }
+
+}
+@media (max-width: 992px) {
+  .btn{
+    font-size: 12px !important;
+  }
+}
+  .accordion-item {
+    border: 1px solid #dee2e6 !important;
+  }
+  .card{
+    height: 100%;
+  }
+  .caja{
+    background-color: #2577d5;
+    border-radius: 1.25rem;
+   
+  }
+  .border-2{
+    border-radius: 1.25rem;
+  }
+  
+  .accordion-button{
+    color: #fff !important;
+    font-size: 18px;
+  
+    
+  }
+  
+  .accordion-body{
+    background-color:  #fff;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+    color: #000 !important;
+  }
+  .page-title{
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+    font-weight: 700 !important;
+  }
+  .accordion-header{
+    background-color: #2577d5;
+  }
+  .accordion-header:hover{
+    background-color: #73a7e4;
+  }
+  .card-titulo{
+    background-color: #2577d5;
+    color: #fff;
+  }
+  .texto-color{
+    color: #fff;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+    /* font-weight: 700 !important;
+    font-size: 18px; */
+  }
+  .parrafo{
+    color: #fff;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+    font-weight: 700 !important;
+  }
+  .btn{  
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+    font-weight: 700 !important;
+    font-size: 13px;
+  }
+  .parrafo2{
+    color: #e99f12;
+  }
+  h1{
+  font-family: "Montserrat", sans-serif !important;
+  /* font-size: 32px; */
+  font-weight: 700;
+  }
+  .marge-titulo{
+    margin-top: 76px !important;
+  }
+  .text-secondary{
+    /* line-height: 1.5; */
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+  /* text-align: justify; */
+  font-weight: 250 !important;
+  color: #000 !important;
+  }
+  button{
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
+  font-weight: 700 !important;
+  }
+  .card-body{
+  font-size: 16px;
+  }
+  
+  @media (max-width: 1360px) {
+  .card-sm > .card-body {
+    padding: 0px !important;
+    }
+    .card-body{
+      font-size: 16px !important;
+    }
+  } 
+  
+  hr{
+  border-width: 3px;
+  color: #066fd1;
+  }
+  .texto-color{
+    color: #fff;
+  }
+  .parrafos{
+    color: #fff;
+  }
+  .cuadro-1{
+    background: #fba303;
+    border-top-width: 12px;
+    border-top-style: solid;
+    border-right-width: 12px;
+    border-right-style: solid;
+    border-left-width: 12px;
+    border-left-style: solid;
+    border-bottom-width: 12px;
+    border-bottom-style: solid;
+  }
+  
+  .cuadro-2{
+    background: #7b1fa2;
+    border-top-width: 12px;
+    border-top-style: solid;
+    border-right-width: 12px;
+    border-right-style: solid;
+    border-left-width: 12px;
+    border-left-style: solid;
+    border-bottom-width: 12px;
+    border-bottom-style: solid;
+  }
+  
+  .cuadro-3{
+    background: #009c98;
+    border-top-width: 12px;
+    border-top-style: solid;
+    border-right-width: 12px;
+    border-right-style: solid;
+    border-left-width: 12px;
+    border-left-style: solid;
+    border-bottom-width: 12px;
+    border-bottom-style: solid;
+  }
+  
+  .cuadro-4{
+    background: #be046f;
+    border-top-width: 12px;
+    border-top-style: solid;
+    border-right-width: 12px;
+    border-right-style: solid;
+    border-left-width: 12px;
+    border-left-style: solid;
+    border-bottom-width: 12px;
+    border-bottom-style: solid;
+  }
+  .texto-noticias{
+    color: #2577d5;
+  }
+  
+  
+  
+  .noticias-imagen-1 {
+    border-radius: 15px;
+    background:#ffa500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }  
+  
+  .noticias-imagen-2 {
+    border-radius: 15px;
+    background: #ffa500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }  
+  
+  .noticias-imagen-3 {
+    border-radius: 15px;
+    background:#ffa500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }  
+  
+  .entes-a{
+    --tblr-img-responsive-ratio: 23% !important;
+  }
+  
+  .paginas{
+   background-color: #fff !important;
+  }
+  
+  .footer-bargro{
+    background-color: #066fd1 !important;
+  }
+  
+  .footer-color{
+    color: #fff;
+  }
+  .footer-color-2{
+    background-color: #1565c0 !important;
+    color: #fff !important;
+  }
+  #footer .footer-top h3::before {
+    right: 0;
+    background: #555;
+  }
+  #footer .footer-top h4::after {
+    background: #f99c24;
+    width: 60px;
+  }
+  #ralla{
+  
+    background: #af3333 !important;
+  }
+  .color-titulo{
+    background-color: #066fd1;
+    color: #fff;
+  }
+  .marge-cajista{
+    padding-top: 26px;;
+  }
+  .titulo4-color{
+    color: #066fd1;
+  }
+  .titulo1-color{
+    color:  #2577d5;
+  }
+  .video{
+    --tblr-aspect-ratio: 30% !important;
+  
+  }
+  .caja-1{
+    padding-top: 33px;
+  }
