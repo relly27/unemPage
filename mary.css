@@ -8,6 +8,9 @@
   .menu-2 .menu-4{
     margin-top: 15px;
   }
+  .letras-menu{
+    font-weight: 700;
+  }
   
   .navbar .navbar-nav .nav-link{
     color: #fff !important;
