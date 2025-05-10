@@ -1,1 +1,0 @@
-# aqui estilos de las vistas
